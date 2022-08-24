@@ -47,7 +47,7 @@ img{
   nav a, nav span{
     margin-right: 1rem;
     /* color: rgb(3, 1, 37); */
-    color: #070734;
+    color: #08084a;
     cursor: pointer;
   }
   nav span{
@@ -71,7 +71,7 @@ img{
     margin-bottom: 0.2rem;
     width: 1.5rem;
     /* background:#000; */
-    background: #070734;
+    background: #070743;
   }
   
   /* The .nav-open class is to be manipulated by js */
@@ -101,7 +101,7 @@ img{
     margin-top: 3.8rem;
     /* background: rgba(0,0,0,0.7); */
     /* background: rgba(255, 255, 255,0.96); */
-    background: #fff9f9;
+    background: #ffffff;
     top:0;
     left: 0;
     right: 0;
@@ -110,11 +110,13 @@ img{
     max-width: 75%;
     transform: translateX(-100%);
     z-index: 1000;
+    box-shadow: 10px 0px 1px -10px #616060bf;
     /* color:#1b1ba0; */
+    border-radius: 0.2em;
   }
   
   .nav-links-small-screen a{
-    color: #070734;
+    color: #08084a;
     font-size: 1rem;
   }
   .nav-links-small-screen .account span{
