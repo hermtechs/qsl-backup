@@ -1,6 +1,7 @@
 const navBtn = document.querySelector('.hamburger');
 const smallScreenMenu = document.querySelector('.nav-links-small-screen');
 const navLinksSmall = smallScreenMenu.querySelectorAll('a');
+const overlay = document.querySelector('.nav-overlay');
 
 const scrollRightBtn = document.querySelector('.scroll-left')
 const scrollLeftBtn = document.querySelector('.scroll-right')
@@ -16,9 +17,15 @@ if(navBtn.classList.contains('nav-open')){
 else{
     navBtn.classList.add('nav-open');
     smallScreenMenu.style.transform = 'translateX(0%)'
+    overlay.style.display = "block"
 }
 }
 
     navLinksSmall.forEach(navLink=>{
         navLink.addEventListener('click',openAndCloseMenu)
     })
+
+overlay.addEventListener('click', ()=>{
+    overlay.style.display = "none"
+    openAndCloseMenu();
+})    
