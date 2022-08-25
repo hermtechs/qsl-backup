@@ -13,6 +13,9 @@ html{
 img{
   max-width: 100%;
 }
+video{
+  max-width: 100%;
+}
 .highlight{
     color: var(--color-highlight);
     font-weight: 550;
@@ -194,7 +197,10 @@ img{
   }
   /******END OF NAV *****/
   /* HEADER SECTION */
-header{
+  header{
+    position: relative;
+  }
+  .hero-container{
     position:absolute;
     margin-top: 3.8rem;
     background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);;
@@ -247,4 +253,24 @@ header{
   font-weight:bolder;
 }
 
+/* main{
+  position: relative;
+} */
+.show-case-video-container{
+/* position: relative; */
+}
+
+.show-case-video{
+  /* position: absolute; */
+  /* top:0;
+  right: 0;
+  left: 0;
+  bottom: 0; */
+  /* position: relative; */
+  margin-top: 5rem;
+  /* position: absolute; */
+  max-height: 80vh;
+  min-width: 100%;
+  object-fit:cover;
+}
   /* END OF HEADER SECTION */
