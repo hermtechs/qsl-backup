@@ -207,7 +207,7 @@ header{
   width: 100%;
   align-items: center;
   justify-items: center;
-  color: rgb(250, 186, 212);
+  color: #fabad4;
 }
 .foot-ball-icon{
   padding-right: 0.5rem;
@@ -234,7 +234,7 @@ header{
   align-items:center;
 }
 .hublot-logo img{
-  max-width: 85px;
+  max-width: 5rem;
 }
 .hublot-logo span{
   display: inline-block;
