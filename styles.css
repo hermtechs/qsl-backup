@@ -197,7 +197,7 @@ img{
 header{
     position:absolute;
     margin-top: 3.8rem;
-    background: #2a2ae4;
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);;
     width: 100%;
 }
 .count-down-worldcup{
@@ -207,7 +207,10 @@ header{
   width: 100%;
   align-items: center;
   justify-items: center;
-  color: #fff;
+  color: rgb(250, 186, 212);
+}
+.foot-ball-icon{
+  padding-right: 0.5rem;
 }
 .count-down-worldcup .timer{
   display: flex;
@@ -231,14 +234,16 @@ header{
   align-items:center;
 }
 .hublot-logo img{
-  max-width: 80px;
+  max-width: 85px;
 }
 .hublot-logo span{
   display: inline-block;
   font-size: 0.65rem;
-  /* text-align: center; */
+  text-align: center;
   font-style: italic;
   padding: 0.8rem;
   margin-top: 0.4rem;
+  font-weight:bold;
 }
+
   /* END OF HEADER SECTION */
