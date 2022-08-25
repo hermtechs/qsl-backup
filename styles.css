@@ -194,7 +194,7 @@ video{
     left: 0;
     z-index: 10;
     display: none;
-  }
+  } 
   /******END OF NAV *****/
   /* HEADER SECTION */
   header{
@@ -277,6 +277,19 @@ position: relative;
   background: rgba(1, 2, 17, 0.5);
   width:100%;
   padding: 16px;
+}
+.text-content p{
+  margin-bottom: 1rem;
+}
+.btn-read-more{
+  background: #1b1ba0;
+  font-size: 0.8rem;
+  padding: 0.3em 0.8em;
+  border-radius: 0.4em 0.4em;
+  cursor: pointer;
+}
+.btn-read-more:hover{
+  opacity: 0.8;
 }
   /* END OF HEADER SECTION */
  
