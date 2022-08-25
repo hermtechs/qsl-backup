@@ -207,7 +207,9 @@ header{
   width: 100%;
   align-items: center;
   justify-items: center;
-  color: #fabad4;
+  /* color: #fabad4; */
+  /* color:#fdfd6b; */
+  color: #FEC310;
 }
 .foot-ball-icon{
   padding-right: 0.5rem;
@@ -231,7 +233,6 @@ header{
 
 .hublot-logo{
   display: flex;
-  align-items:center;
 }
 .hublot-logo img{
   max-width: 5rem;
@@ -239,11 +240,11 @@ header{
 .hublot-logo span{
   display: inline-block;
   font-size: 0.65rem;
-  text-align: center;
+  /* text-align: center; */
   font-style: italic;
-  padding: 0.8rem;
-  margin-top: 0.4rem;
-  font-weight:bold;
+  padding: 0.65rem;
+  margin-top: 0.1rem;
+  font-weight:bolder;
 }
 
   /* END OF HEADER SECTION */
