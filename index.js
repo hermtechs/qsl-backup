@@ -7,6 +7,10 @@ const scrollRightBtn = document.querySelector('.scroll-left')
 const scrollLeftBtn = document.querySelector('.scroll-right')
 const slideShowContainer = document.querySelector('.services-slide-show')
 const mainDataContainer = document.querySelector('.user-data-section');
+
+const showCasevideo =  document.querySelector('.show-case-video')
+
+
 //navigation menu toggle
 navBtn.addEventListener('click', openAndCloseMenu)
 function openAndCloseMenu(){  
@@ -29,3 +33,10 @@ overlay.addEventListener('click', ()=>{
     overlay.style.display = "none"
     openAndCloseMenu();
 })    
+// SHOW CASE VIDEO
+
+window.addEventListener('load',()=>{
+    // console.log(showCasevideo);
+    showCasevideo.play();
+})
+// END OF SHOW CASE VIDEO
