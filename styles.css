@@ -193,4 +193,52 @@ img{
     display: none;
   }
   /******END OF NAV *****/
-  
+  /* HEADER SECTION */
+header{
+    position:absolute;
+    margin-top: 3.8rem;
+    background: #2a2ae4;
+    width: 100%;
+}
+.count-down-worldcup{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  color: #fff;
+}
+.count-down-worldcup .timer{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.timer h4{
+  margin-right: 1rem;
+  font-size: 0.65rem;
+}
+.timer h4 span{
+  font-size: 1rem;
+}
+.timer span{
+  display: block;
+  text-align: center;
+}
+
+.hublot-logo{
+  display: flex;
+  align-items:center;
+}
+.hublot-logo img{
+  max-width: 80px;
+}
+.hublot-logo span{
+  display: inline-block;
+  font-size: 0.65rem;
+  /* text-align: center; */
+  font-style: italic;
+  padding: 0.8rem;
+  margin-top: 0.4rem;
+}
+  /* END OF HEADER SECTION */
