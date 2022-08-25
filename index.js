@@ -35,7 +35,7 @@ overlay.addEventListener('click', ()=>{
 })    
 // SHOW CASE VIDEO
 
-window.addEventListener('load',()=>{
+window.addEventListener('DOMContentLoaded',()=>{
     // console.log(showCasevideo);
     showCasevideo.play();
 })
