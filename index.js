@@ -35,8 +35,8 @@ overlay.addEventListener('click', ()=>{
 })    
 // SHOW CASE VIDEO
 
-window.addEventListener('load',()=>{
-    // console.log(showCasevideo);
-    showCasevideo.play();
-})
+// window.addEventListener('load',()=>{
+//     // console.log(showCasevideo);
+//     showCasevideo.play();
+// })
 // END OF SHOW CASE VIDEO
