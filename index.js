@@ -40,3 +40,27 @@ window.addEventListener('DOMContentLoaded',()=>{
     showCasevideo.play();
 })
 // END OF SHOW CASE VIDEO
+
+
+// World Cup Count Down starts from here;
+const days = document.querySelector(".count-down-days");
+const hours = document.querySelector(".count-down-hours");
+const minutes = document.querySelector(".count-down-mins");
+
+const countDown = () => {
+    const countDate = new Date("November 20, 2022 19:00:00+0300").getTime();
+    const currentDate = new Date().getTime();
+    const gap = countDate - currentDate;
+
+    const minValue = Math.floor(gap / 1000 / 60) % 60;
+    const hourValue = Math.floor(gap / 1000 / 60 / 60 ) % 24;
+    const dayValue = Math.floor(gap / 1000 / 60 / 60 / 24);
+
+
+    days.innerHTML = dayValue < 10 ? `0${dayValue}` : dayValue;
+    hours.innerHTML = hourValue < 10 ? `0${hourValue}` : hourValue;
+    minutes.innerHTML = minValue < 10 ? `0${minValue}` : minValue;
+
+}
+countDown();
+setInterval(countDown, 1000);
