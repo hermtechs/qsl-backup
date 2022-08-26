@@ -64,3 +64,26 @@ const countDown = () => {
 }
 countDown();
 setInterval(countDown, 1000);
+
+
+/* SLIDER IMAGES WITH JAVASCRIPT AND CSS STARTS HERE */
+var slider = document.querySelector(".banner").children,
+  sliderLen = slider.length;
+
+let slid = 0;
+
+function slides() {
+  for (let i = 0; i < sliderLen; i++) {
+    slider[i].classList.remove("slide-play");
+  }
+  slider[slid].classList.add("slide-play");
+  if (slid == sliderLen - 1) {
+    slid = 0;
+  } else {
+    slid++;
+  }
+  setTimeout(slides, 5000);
+}
+
+window.onload = slides();
+/* SLIDER IMAGES WITH JAVASCRIPT AND CSS ENDS HERE */
