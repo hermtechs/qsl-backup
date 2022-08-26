@@ -64,4 +64,3 @@ const countDown = () => {
 }
 countDown();
 setInterval(countDown, 1000);
-
