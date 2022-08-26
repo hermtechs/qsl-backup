@@ -168,6 +168,30 @@ video{
     transform: scale(1);
   }
   
+
+
+
+  /* BOOTSTRAP STYLES STARTS HERE */
+  #myCarousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border: 5px solid var(--color-bg-primary);
+    margin-bottom: 20px;
+  }
+  .carousel-caption{
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+
+
+
+
+
+
+
+
   /* SMALL SCREENS */
   @media(max-width:850px){
     nav{
