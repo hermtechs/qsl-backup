@@ -57,8 +57,8 @@ const countDown = () => {
     const dayValue = Math.floor(gap / 1000 / 60 / 60 / 24);
 
 
-    days.innerHTML = dayValue < 10 ? `0${dayValue}` : dayValue;
-    hours.innerHTML = hourValue < 10 ? `0${hourValue}` : hourValue;
+    days.innerHTML = dayValue < 10 ? `0${dayValue}` : `${dayValue} :`
+    hours.innerHTML = hourValue < 10 ? `0${hourValue}` : `${hourValue} :`;
     minutes.innerHTML = minValue < 10 ? `0${minValue}` : minValue;
 
 }
