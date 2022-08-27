@@ -57,10 +57,33 @@ const countDown = () => {
     const dayValue = Math.floor(gap / 1000 / 60 / 60 / 24);
 
 
-    days.innerHTML = dayValue < 10 ? `0${dayValue}` : `${dayValue} :`
+    days.innerHTML = dayValue < 10 ? `0${dayValue}` : `${dayValue}:`
     hours.innerHTML = hourValue < 10 ? `0${hourValue}` : `${hourValue} :`;
     minutes.innerHTML = minValue < 10 ? `0${minValue}` : minValue;
 
 }
 countDown();
 setInterval(countDown, 1000);
+
+
+/* SLIDER IMAGES WITH JAVASCRIPT AND CSS STARTS HERE */
+var slider = document.querySelector(".banner").children,
+  sliderLen = slider.length;
+
+let slid = 0;
+
+function slides() {
+  for (let i = 0; i < sliderLen; i++) {
+    slider[i].classList.remove("slide-play");
+  }
+  slider[slid].classList.add("slide-play");
+  if (slid == sliderLen - 1) {
+    slid = 0;
+  } else {
+    slid++;
+  }
+  setTimeout(slides, 5000);
+}
+
+window.onload = slides();
+/* SLIDER IMAGES WITH JAVASCRIPT AND CSS ENDS HERE */
