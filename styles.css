@@ -305,7 +305,16 @@ position: relative;
 
   .news-articles .activeSlide{
     display: flex;
-    transition: all 8s ease-in-out
+    animation: fade-visible 1s;
+ }
+ @keyframes fade-visible{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: opacity linear;
+  }
  }
 
 
