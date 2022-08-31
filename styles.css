@@ -437,6 +437,7 @@ caption{
     }
     nav .links{
       display: none;
+
     }
     .nav-links-small-screen{
       display: flex;
@@ -445,10 +446,15 @@ caption{
       flex-wrap: wrap;
     } 
     .featured-news img{
-      width: 75px;
+      width: 110px;
+    }
+    .aside-item a{
+      font-size: 16px;
+      font-weight: 500;
+      
     }
     .news-timer{
-      font-size: 8px;
+      font-size: 10px;
     }
 }
  
