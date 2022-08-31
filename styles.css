@@ -425,6 +425,60 @@ caption{
 }
   /*END OF SECTION ARTICLES */
 
+  /* Actual Banner Code */
+.ad {
+  margin: 20px auto;
+  max-width: 768px;
+  background-size: cover;
+  background-position: left center;
+  height: 100px;
+  overflow: hidden;
+  background-color: maroon;
+}
+.ad .container{
+  display: flex;
+  flex-direction: row;
+}
+.container:nth-child(1){
+  background-color: maroon;
+  color: #fff;
+}
+.logo img{
+  object-fit: cover;
+}
+
+
+.world-cup-fixtures{
+  background-color: #ceceec;
+}
+.world-cups-items{
+  display: flex;
+  max-width: 100%;
+  gap: 20px;
+  /* justify-content: center;
+  align-items: center; */
+  overflow-y: scroll;
+  scroll-margin: hidden;
+  margin: 20px;
+}
+.world-cups-items img{
+  width: 30px;
+  object-fit: cover;
+}
+.worldcup-item{
+  display: block;
+  width: 500px;
+  padding: 5px 15px ;
+  background-color: #fff;
+}
+.worldcup-flags{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+    
+
  /* SMALL SCREENS */
   @media(max-width:850px){
     nav{
