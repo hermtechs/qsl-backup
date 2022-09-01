@@ -304,6 +304,11 @@ position: relative;
     border-radius: 0.2rem;
     margin: 6.8rem 1rem 1rem 1rem;
   }
+  @media(max-width:480px){
+    .category-heading{
+    margin: 10rem 1rem 1rem 1rem;
+    }
+  }
   .news-article{
   min-width: 20rem;
   max-width: 30rem;
