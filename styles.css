@@ -412,7 +412,9 @@ background: linear-gradient(to right, #0369c7, #e6dbe2); /* W3C, IE 10+/ Edge, F
   /* border-bottom: 1px solid #000; */
   /* align-items: center; */
   margin: 1rem;
-  /* max-width: 500px; */
+}
+.aside-text{
+  max-width: 500px;
 }
 
 .featured-news img{
