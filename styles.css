@@ -394,7 +394,7 @@ background: linear-gradient(to right, #0369c7, #e6dbe2); /* W3C, IE 10+/ Edge, F
 }
 /* ASIDE LINKS/ITEMS */
 .aside-news-links{
-  margin: 1rem 2rem;
+  margin: 1rem 0.5rem 1rem 0.5rem
 }
 
 .aside-item{
@@ -516,7 +516,7 @@ caption{
 }
 .worldcup-item{
   display: block;
-  width: 500px;
+  /* width: 500px; */
   padding: 5px 15px ;
   background-color: #fff;
 }
