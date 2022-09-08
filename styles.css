@@ -496,6 +496,201 @@ background: #fff;
 .bigger-post-description .read-more-btn{
   border-radius: 1rem;
 }
+
+
+/* advert css */
+.ad-content--sect{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  padding-left: 0;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.ad--content-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.ad--item-description{
+  width: 60%;
+  line-height: 2;
+}
+.ad--content-items img{
+  width: 340px;
+  height: 220px;
+}
+.ad--section{
+  position: relative;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.ad--section .ad--btn{
+  background-color: #7b0548;
+  padding: 5px 25px;
+  color: #fff;
+  border-radius: 15px;
+}
+.ad--section .ad--info{
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  padding: 1px 10px;
+  border: 1px solid #200518;
+  border-radius: 50%;
+}
+
+.ad--section .ad--headers{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 1px 10px;
+  background-color:  #200518;
+  color: #fff;
+  
+}
+.ad--article img{
+  width: 100px;
+  object-fit: cover;
+}
+.ad--content .ad--article{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.ad-text{
+  width: 60%;
+}
+.ad--item-description .ad--ad{
+  background-color: #7b0548;
+  color: #fff;
+  font-size: 10px;
+  padding: 1px 10px;
+  text-align: center;
+}
+.ad--item-description .ad--stars{
+  color: #7b0548;
+  font-size: 18px;
+  font-weight: 600;
+}
+.ad--content-items .ad--item-description .btn--ad{
+  background-color: #7b0548;
+  color: #fff;
+  border-radius: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: center;
+  font-weight: 500;
+
+}
+ /* advert css */
+
+ /* ARTICLE TWO NEWS LETTER START*/
+.article-2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  /* background-color: #ddd; */
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.news-letter h4{
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.article-2 input{
+  outline: none;
+  border: none;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+.form-news .btn{
+  background-color: #000;
+  padding: 10px 30px;
+  color: #fff;
+  margin-left: 10px;
+}
+.form-news{
+  display: flex;
+}
+/* ARTICLE ENDS */
+
+
+ /* FOOTER CSS */
+ .footer-sect{
+  background: var(--clr-gradient-red1);
+  padding: 20px;
+  color: #fff;
+}
+.footer-sect a{
+  text-decoration: none;
+  color: #fff;
+}
+.footer-sect a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+.footer-sect h5{
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.row-3 {
+  margin: 25px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.col-6 ul li{
+  margin-top: 20px;
+}
+.col-6 ul li  a{
+  font-size: 18px;
+}
+.footer-head{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 25px;
+}
+.footer-head h3{
+  font-family: 'Press Start 2P', cursive;
+}
+.col5 p{
+  font-weight: 700;
+  font-size: 20px;
+}
+.col5 a i{
+  margin-left: 15px;
+  background-color: rgba(0,0,0,0.7);
+  padding: 10px 15px;
+}
+footer{
+  text-align: center;
+}
+ /* FOOTER CSS */
+
+
+
+
+
+
  /* SMALL SCREENS */
   @media(max-width:850px){
     nav{
@@ -528,5 +723,68 @@ background: #fff;
     .news-timer{
       font-size: 10px;
     }
+    /* advert css */
+    .ad--section{
+      margin-left: 20px;
+      margin-right: 20px;
+      height: auto;
+    }
+    .ad--content .ad--article{
+      flex-wrap: wrap;
+    }
+    .ad-text{
+      width: auto;
+    }
+    .ad--section .ad--info{
+      right: 8px;
+    }
+    .ad--content-items{
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .ad-content--sect{
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .ad--item-description{
+      width: auto;
+      padding-left: 10px;
+      line-height: auto;
+    }
+    .ad--content-items .ad--item-description .btn--ad{
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+    .ad--item-description .ad--tagline{
+      text-align: center;
+    }
+    
+    /* advert css */
+
+    /* footer css */
+    .article-2{
+      flex-wrap: wrap;
+    }
+    .form-news{
+      margin-top: 10px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .footer-head{
+      flex-wrap: wrap;
+      margin: 10px;
+      padding: 12px;
+    }
+    .footer-head .col5 a i{
+      margin-left: 8px;
+      padding: 4px 7px;
+    }
+    .col5{
+      margin-top: 10px;
+    }
+    .row-3{
+      flex-wrap: wrap;
+    }
+     /* footer css */
 }
  
