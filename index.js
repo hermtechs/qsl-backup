@@ -65,66 +65,50 @@ const countDown = () => {
 countDown();
 setInterval(countDown, 1000);
 
+//CAROUSEL SLIDE @RECENT IN SPORTS SECTION
+const slideNextBtn = document.querySelector('.next-btn')
+const slidePrevBtn = document.querySelector('.prev-btn')
+const slides = document.querySelectorAll('.slide');
+const carouselContainer = document.querySelector('.carousel-track-container');
+const slideWidth = slides[0].clientWidth
 
-/* SLIDER IMAGES WITH JAVASCRIPT AND CSS STARTS HERE */
-const slider = document.querySelector(".slides").children;
-const slides = slider.length
-const prev = document.querySelector(".prev")
-const next = document.querySelector(".next")
-const duration = 6000;
+/*extend to left by equal width ie slidewidth to 
+remove stacking on top of each other*/
+// slides.forEach((slide, index){
+//   slide.style.left= "slideWidth*index";
+// })
+slides.forEach((slide,index)=>{
+ slide.style.left = `${slideWidth*index}px`;
+//  console.log(x)
+})
+slideNextBtn.addEventListener('click', slideRight)
+slidePrevBtn.addEventListener('click', slideLeft)
 
-let index = 0;
-
-prev.onclick = function(){
-    slide("prev")
+let counter = 1 //to calculate how many slides have been moved, similar to click times
+function slideRight(){
+  counter++;
+  const currentSlide = document.querySelector('.current-slide')
+  const nextSlide = currentSlide.nextElementSibling;
+  const amountToMove = nextSlide.style.left;
+  const totalAmountToMove = slideWidth*slides.length;
+  // if(counter<slides.length){
+  carouselContainer.style.transform = `translateX(-${amountToMove})`
+  currentSlide.classList.remove('current-slide');
+  nextSlide.classList.add('current-slide')
+  // console.log(counter)
+// }
+// else{
+//   carouselContainer.style.transform = `translateX(-100px)`
+//   currentSlide.classList.remove('current-slide');
+//   nextSlide.classList.add('current-slide')
+// }
 }
 
-next.onclick = function(){
-    slide("next")
+function slideLeft(){
+  const currentSlide = document.querySelector('.current-slide')
+  const nextSlide = currentSlide.previousElementSibling;
+  const amountToMove = nextSlide.style.left;
+  carouselContainer.style.transform = `translateX(-${amountToMove})`
+  currentSlide.classList.remove('current-slide');
+  nextSlide.classList.add('current-slide')
 }
-
-function slide(direction){
-    // progress()
-    if(direction == 'next'){
-        if(index==slides-1){
-            index=0;
-        }
-        else{
-            index++;
-        }
-    }
-    if(index == 'prev'){
-        if(index == 0){
-            index = slides-1
-        }
-        else{
-            index--;
-        }
-    }
-    for(let i = 0; i<slides; i++){
-        slider[i].classList.remove("activeSlide")
-    }
-    slider[index].classList.add("activeSlide");
-}
-
-
-function progress(){
-    document.querySelector(".meter").innerHTML = '';
-    const div = document.createElement("div");
-    div.style.height = "5px";
-    div.style.width = "0px";
-    div.style.position = "absolute";
-    div.style.left = "0px";
-    div.style.top = "0px";
-    div.style.backgroundColor = "blue";
-    div.id = "meter";
-    div.style.animation = "progress "+ duration/1000 + "s linear";
-    document.querySelector(".meter").appendChild(div);
-}
-// progress()
-
-function autoslide(){
-    slide("next");
-}
-let timer = setInterval(autoslide, duration);
-/* SLIDER IMAGES WITH JAVASCRIPT AND CSS ENDS HERE */

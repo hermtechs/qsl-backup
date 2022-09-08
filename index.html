@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Qatar Sports Live</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- SWIPERJS LIBRARY -->
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
-      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- <script src="https://kit.fontawesome.com/451579efa6.js" crossorigin="anonymous"></script> -->
+    rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+ <!-- Link Swiper's CSS -->
+ <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> -->
+
   </head>
   <body>
     <nav>
@@ -64,12 +63,8 @@
             <h4><span class="count-down-mins"></span> MINUTES</h4>
           </div>
           <div class="hublot-logo">
-            <img
-              src="./icons/hublot-logo-upd.svg"
-              alt="hublot timer logo"/><span
-              >Official WORLD <i class="fa-solid fa-trophy"></i> 2022 Count
-              Down</span
-            >
+            <img src="./icons/hublot-logo-upd.svg" alt="hublot timer logo"/>
+            <span>Official WORLD <i class="fa-solid fa-trophy"></i> 2022 Count Down</span>
           </div>
         </div>
       </div>
@@ -90,200 +85,191 @@
 
 <h4 class="category-heading">RECENT IN SPORTS</h4>
 
-<section class="news-articles-container-main">
-  <div class="news-articles-container">
-  <div class="news-articles slides">
-    <article class="news-article activeSlide">
-    <img src="./images/player wins-1.jpg" alt="" class="news-img">
-    <div class="news-text">
-        <h3 class="news-title">Real’s Benzema named UEFA player of year, Ancelotti wins coach’s award</h3>
-        <p class="short-description">
-            Carlo Ancelotti took the coaching honours after they 
-            led the club to
-        </p>
-        <a class="btn-read-more" href="#">Read More 0</a>
-    </div>
-    </article>
-    <article class="news-article">
-        <img src="./icons/qsl3.jpg" alt="" class="news-img">
-        <div class="news-text">
-            <h3 class="news-title">Real’s Benzema named UEFA player of year, Ancelotti wins coach’s award</h3>
-            <p class="short-description">
-                Carlo Ancelotti took the coaching honours after they 
-                led the club to
-            </p>
-            <a class="btn-read-more" href="#">Read More 1</a>
-        </div>
-        </article>
-        <article class="news-article">
-            <img src="./icons/qsl4.jpg" alt="" class="news-img">
-            <div class="news-text">
-                <h3 class="news-title">Real’s Benzema named UEFA player of year, Ancelotti wins coach’s award</h3>
-                <p class="short-description">
-                    Carlo Ancelotti took the coaching honours after they 
-                    led the club to
-                </p>
-                <a class="btn-read-more" href="#">Read More 2</a>
-            </div>
-            </article>
-            <article class="news-article">
-                <img src="./icons/qsl5.jpg" alt="" class="news-img">
-                <div class="news-text">
-                    <h3 class="news-title">Real’s Benzema named UEFA player of year, Ancelotti wins coach’s award</h3>
-                    <p class="short-description">
-                        Carlo Ancelotti took the coaching honours after they 
-                        led the club 
-                    </p>
-                    <a class="btn-read-more" href="#">Read More 3</a>
-                </div>
-             </article>
-            </div>
-            <div class="carousel-ctrl-btns">
-              <div class="carousel-btn prev"><i class="fa-solid fa-right-long"></i> </div>
-            <div class="carousel-btn next"><i class="fa-solid fa-right-long"></i> </div>
-          </div>
-      </div>
+<!-- recent news posts beginning -->
 
-      <div class="aside-news-links">
-        <div class="featured-news">
-          <!-- <h3>SPORTS   <span class="dash"></span> </h3> -->
-          <div class="col-1">
-            <div class="aside-item">
-              <img src="./icons/qsl3.jpg" alt="">
-            <div class="aside-text">   
-            <p><a href="#">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligend
-            </a></p>
-            
-            <p class="news-timer">
-              <i class="fa-solid fa-clock"></i> 28 March 2022
-            </p>
-          </div>
-            </div>
-        </div>
-
-        <div class="col-1">
-          <div class="aside-item">
-            <img src="./icons/qsl3.jpg" alt="">
-          <div class="aside-text">   
-          <p><a href="#">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligend
-          </a></p>
-          
-          <p class="news-timer">
-            <i class="fa-solid fa-clock"></i> 28 March 2022
-          </p>
-        </div>
-          </div>
-      </div>
-      <div class="col-1">
-        <div class="aside-item">
-          <img src="./icons/qsl3.jpg" alt="">
-        <div class="aside-text">   
-        <p><a href="#">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligend
-        </a></p>
-        
-        <p class="news-timer">
-          <i class="fa-solid fa-clock"></i> 28 March 2022
-        </p>
-      </div>
-        </div>
-    </div>
-        <div class="col-1">
-            <div class="aside-item">
-              <img src="./icons/qsl5.jpg" alt="">
-            <div class="aside-text">  
-            <p><a href="#">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligend
-            </a></p>
-            <p class="news-timer">
-                <i class="fa-solid fa-clock"></i> 28 March 2022
-            </p>
-          </div>
-          </div>
-        </div>
-
-      </div>
-      </div>
-</section>
-
-<section class="ad">
-  <div class="container">
-      <div class="logo">
-        <img src="./icons/football.png" alt="">
-      </div>
-      <div>AD AREA</div>
+<section class="section-carousel recent-news-section">
+  <div class="carousel-ctrl-btns">
+    <div class="prev-btn"><i class="fa-solid fa-arrow-left-long"></i></div>
+    <div class="next-btn"><i class="fa-solid fa-arrow-right-long"></i></div>
   </div>
+<div class="carousel-track-container">  
+<article class="news-slide slide current-slide">
+  <img src="./images/qsl2.jpg" class="slide-img big-post-img" alt="">
+  <div class="description-txt">
+    <h3>Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+     elit. Distinctio, error!</p>
+     <a href="#" class="read-more-btn">Read More</a>
+  </div>
+</article>
+<article class="news-slide slide">
+  <img src="./images/player wins-1.jpg" class="slide-img big-post-img" alt="">
+  <div class="description-txt">
+    <h3>Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+     elit. Distinctio, error!</p>
+     <a href="#" class="read-more-btn">Read More</a>
+  </div>
+</article>
+<article class="news-slide slide">
+  <img src="./images/qsl5.jpg" class="slide-img big-post-img" alt="">
+  <div class="description-txt">
+    <h3>Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+     elit. Distinctio, error!</p>
+    <a href="#" class="read-more-btn">Read More</a>
+  </div>
+</article>
+<article class="news-slide slide">
+  <img src="./images/qsl5.jpg" class="slide-img big-post-img" alt="">
+  <div class="description-txt">
+    <h3>Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+     elit. Distinctio, error!</p>
+     <a href="#" class="read-more-btn">Read More</a>
+  </div>
+</article>
+
+</div>
 </section>
 
-<section class="world-cup-fixtures">
-  <div class="world-cup-items-list">
-    <h5>Don't miss these</h5>
-    <p class="worldcup-title">
-      World Cup
-    </p>
-    <div class="world-cups-items">
-      <div class="worldcup-item">
-        <div class="worldcup-flags">
-          <img src="./images/qatar.png" alt="">
-          <img src="./images/ecuador.png" alt="">
-        </div>
-        <div class="worldcup-description">
-          <p class="worldcup-group">Group A</p>
-          <p class="worldcup-team">
-            Qatar Vs Ecuador <span>Nov 20 <br> 7:00PM</span>
-          </p>
-        </div>
-      </div>
-
-      <div class="worldcup-item">
-        <div class="worldcup-flags">
-          <img src="./images/england.png" alt="">
-          <img src="./images/iran.png" alt="">
-        </div>
-        <div class="worldcup-description">
-          <p class="worldcup-group">Group B</p>
-          <p class="worldcup-team">
-            England Vs Iran <span>Nov 21 <br> 4:00PM</span>
-          </p>
-        </div>
-      </div>
-
-      <div class="worldcup-item">
-        <div class="worldcup-flags">
-          <img src="./images/senegal.png" alt="">
-          <img src="./images/netherlands.png" alt="">
-        </div>
-        <div class="worldcup-description">
-          <p class="worldcup-group">Group A</p>
-          <p class="worldcup-team">
-            Senegal Vs Netherlands <span>Nov 21 <br> 7:00PM</span>
-          </p>
-        </div>
-      </div>
-
-
-      <div class="worldcup-item">
-        <div class="worldcup-flags">
-          <img src="./images/qatar.png" alt="">
-          <img src="./images/ecuador.png" alt="">
-        </div>
-        <div class="worldcup-description">
-          <p class="worldcup-group">Group A</p>
-          <p class="worldcup-team">
-            Qatar Vs Ecuador <span>Nov 20 <br> 7:00PM</span>
-          </p>
-        </div>
-      </div>
+ <!-- smaller post links for recent news articles -->
+ <div class="small-posts-container more-news">
+  <a href="#" class="small-post">
+    <img src="./images/qsl2.jpg" alt="" class="small-post-img">
+    <div class="small-post-description">
+      <p>Lorem ipsum dolor sit, amet consectetur adipis, ducimus.</p>
+    </div>
+  </a>
+  <a href="#" class="small-post">
+    <img src="./images/qsl3.jpg" alt="" class="small-post-img">
+    <div class="small-post-description">
+      <p>Lorem ipsum dolor sit, amet consectetur adipis, ducimus.</p>
+    </div>
+  </article>
+  <a href="#" class="small-post">
+    <img src="./images/qsl5.jpg" alt="" class="small-post-img">
+    <div class="small-post-description">
+      <p>Lorem ipsum dolor sit, amet consectetur adipis, ducimus.</p>
+    </div>
+  </a>
+  <a href="#" class="small-post">
+    <img src="./images/qsl2.jpg" alt="" class="small-post-img">
+    <div class="small-post-description">
+      <p>Lorem ipsum dolor sit, amet consectetur adipis, ducimus.</p>
+    </div>
+  </a>
+  <a href="#" class="small-post">
+    <img src="./images/qsl4.jpg" alt="" class="small-post-img">
+    <div class="small-post-description">
+      <p>Lorem ipsum dolor sit, amet consectetur adipis, ducimus.</p>
+    </div>
+  </a>
+  </div>
+   <!--END smaller post links for RECENT news articles -->
+<section class=" news-section horse-racing-section">
+  <h4 class="section-title">HORSE RACING</h4>
+  <div class="horse-bigger-post">
+    <div class="bigger-post-description">
+      <h3>Qatar Competes at international level for the 5th time in a row</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Possimus officia et nostrum neque sed ullam.</p>
+      <a href="#" class="read-more-btn">Read More</a>  
     </div>
   </div>
+   <!-- smaller post links for HORSE news articles -->
+ <div class="small-posts-container more-news">
+  <a href="#" class="small-post">
+    <img src="./images/qsl2.jpg" alt="" class="small-post-img">
+    <div class="small-post-description">
+      <p>Lorem ipsum dolor sit, amet consectetur , ducimus.</p>
+    </div>
+  </a>
+  <a href="#" class="small-post">
+    <img src="./images/qsl3.jpg" alt="" class="small-post-img">
+    <div class="small-post-description">
+      <p>Lorem ipsum dolor sit, amet consectetur , ducimus.</p>
+    </div>
+  </article>
+  <a href="#" class="small-post">
+    <img src="./images/qsl5.jpg" alt="" class="small-post-img">
+    <div class="small-post-description">
+      <p>Lorem ipsum dolor sit, amet consectetur , ducimus.</p>
+    </div>
+  </a>
+  <a href="#" class="small-post">
+    <img src="./images/qsl2.jpg" alt="" class="small-post-img">
+    <div class="small-post-description">
+      <p>Lorem ipsum dolor sit, amet consectetur , ducimus.</p>
+    </div>
+  </a>
+  <a href="#" class="small-post">
+    <img src="./images/qsl4.jpg" alt="" class="small-post-img">
+    <div class="small-post-description">
+      <p>Lorem ipsum dolor sit, amet consectetur , ducimus.</p>
+    </div>
+  </a>
+  </div>
+   <!--END smaller post links for HORSE news articles -->
 </section>
+<section class="news-section football-section">
+  <h4 class="section-title">FOOTBALL</h4>
+  <div class="football-bigger-post">
+    <div class="bigger-post-description">
+      <h3>Qatar Competes at international level for the 5th time in a row</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Possimus officia et nostrum neque sed ullam.</p>
+      <a href="#" class="read-more-btn">Read More</a>  
+    </div>
+  </div>
+   <!-- smaller post links for HORSE news articles -->
+ <div class="small-posts-container more-news">
+  <a href="#" class="small-post">
+    <img src="./images/qsl2.jpg" alt="" class="small-post-img">
+    <div class="small-post-description">
+      <p>Lorem ipsum dolor sit, amet consectetur , ducimus.</p>
+    </div>
+  </a>
+  <a href="#" class="small-post">
+    <img src="./images/qsl3.jpg" alt="" class="small-post-img">
+    <div class="small-post-description">
+      <p>Lorem ipsum dolor sit, amet consectetur , ducimus.</p>
+    </div>
+  </article>
+  <a href="#" class="small-post">
+    <img src="./images/qsl5.jpg" alt="" class="small-post-img">
+    <div class="small-post-description">
+      <p>Lorem ipsum dolor sit, amet consectetur , ducimus.</p>
+    </div>
+  </a>
+  <a href="#" class="small-post">
+    <img src="./images/qsl2.jpg" alt="" class="small-post-img">
+    <div class="small-post-description">
+      <p>Lorem ipsum dolor sit, amet consectetur adipis, ducimus.</p>
+    </div>
+  </a>
+  <a href="#" class="small-post">
+    <img src="./images/qsl4.jpg" alt="" class="small-post-img">
+    <div class="small-post-description">
+      <p>Lorem ipsum dolor sit, amet consectetur adipis, ducimus.</p>
+    </div>
+  </a>
+  </div>
+   <!--END smaller post links for HORSE news articles -->
+</section>
+
+
+
+
 
 </main>
-    </main>
+<!-- Swiper JS -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
 
-
-    <script src="./index.js"></script>
-  </body>
+  <!-- SWIPERJS LIBRARY -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- SWIPERJS LIBRARY -->
+<script src="./index.js"></script>
+</body>
 </html>
+<!-- <JOSEPH/> -->
