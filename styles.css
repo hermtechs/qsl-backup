@@ -1,20 +1,24 @@
 /**** Styles related to third party libraries like swiper.js are at the botton*/
 /**** media queries also at the bottom */
 
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300&display=swap");
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Poppins", sans-serif; */
+    font-family: "Poppins", sans-serif;
     /* font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif; */
-    font-family: "Open Sans", -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    /* font-family: "Open Sans", -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif; */
 }
 :root{
+  font-size: 15.5px;
+  --color-important-txt:rgb(193, 56, 170);
   --clr-headings:#7b0548;
   --clr-buttons:#7b0548;
   --clr-gradient-red1:linear-gradient(to right, #CB218E 0%, #6617CB 100%);
+  --clr-gradient-dark:linear-gradient(to right, #15020e 0%, #15022d 100%);
 }
 
 html{
@@ -26,8 +30,8 @@ img{
 video{
   max-width: 100%;
 }
-.highlight{
-    color: var(--color-highlight);
+.important-text{
+    color: var(--color-important-txt);
     font-weight: 550;
   }
   .logo{
@@ -271,7 +275,7 @@ position: relative;
   position: absolute;
   color: #fff;
   /* margin-top:-8.5rem; */
-  bottom:3.8rem;
+  bottom:5rem;
   /* bottom: 0; */
   background: #01021180;
   width:100%;
@@ -312,7 +316,7 @@ position: relative;
     letter-spacing: 2.5px;
     padding: 0.4rem 1rem ;
     border-radius: 0.2rem;
-    margin: 8rem 1rem 1rem 1rem;
+    margin: 9.8rem 1rem 1rem 1rem;
   }
   @media(max-width:480px){
     .category-heading{
@@ -438,20 +442,39 @@ background: #fff;
 }
 .small-post{
   display: flex;
-  margin: 1rem;
+  margin: 1rem 1rem 1.5rem 1rem;
   gap:1rem;
   background: #fffbfb;
   height: 90px;
   padding: 0rem 0.2rem;
+  color: #333;
+  font-weight: 400;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 }
 .small-post-description{
-  max-width: 800px;
+  max-width: 450px;
 }
 .news-section .small-post{
-  margin: 1rem 0.1rem 1rem 0rem;
+  margin: 1rem 0.1rem 1.8rem 0rem;
   /* background: #1b1ba0; */
 }
-/* BIGGER POST a.k.a header post */
+/* BIGGER POSTS a.k.a header posts */
+.worldcup-bigger-post{
+  position: relative;
+  width: 100%;
+  height:500px;
+  background: #200518;
+  background: url("images/worldcup.jpg"),
+                     radial-gradient(#9c9a9a, #340329);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center center;   
+  color: #fff;
+  padding: 15em 0;
+}
+
  .horse-bigger-post{
   position: relative;
   width: 100%;
@@ -467,6 +490,22 @@ background: #fff;
   color: #fff;
   padding: 15em 0;
 }
+.basketball-bigger-post{
+  position: relative;
+  width: 100%;
+  height:500px;
+  background: #200518;
+  background: url("images/basketball.jpg"),
+                     radial-gradient(#9c9a9a, #340329);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center center;   
+  color: #fff;
+  padding: 15em 0;
+}
+
 .football-bigger-post{
   position: relative;
   width: 100%;
@@ -482,6 +521,7 @@ background: #fff;
   color: #fff;
   padding: 15em 0;
 }
+
 .bigger-post-description{
   margin: 1rem 2rem;
   font-weight: 500;
@@ -632,7 +672,7 @@ background: #fff;
 
  /* FOOTER CSS */
  .footer-sect{
-  background: var(--clr-gradient-red1);
+  background:var(--clr-gradient-dark);
   padding: 20px;
   color: #fff;
 }
@@ -677,18 +717,14 @@ background: #fff;
   font-size: 20px;
 }
 .col5 a i{
-  margin-left: 15px;
-  background-color: rgba(0,0,0,0.7);
+  /* margin-left: 15px; */
+  /* background-color: rgba(0,0,0,0.7); */
   padding: 10px 15px;
 }
 footer{
   text-align: center;
 }
  /* FOOTER CSS */
-
-
-
-
 
 
  /* SMALL SCREENS */
@@ -723,6 +759,7 @@ footer{
     .news-timer{
       font-size: 10px;
     }
+
     /* advert css */
     .ad--section{
       margin-left: 20px;
@@ -786,5 +823,29 @@ footer{
       flex-wrap: wrap;
     }
      /* footer css */
+}
+@media (min-width:650px){
+  .small-post{
+    max-width: 490px;
+    /* height: 200px; */
+  padding: 0rem 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+  }
+  .small-post img{
+    width:100%;
+    min-height: 120px;
+    height: 100%;
+  }
+.small-posts-container{
+  /* background: red; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+.small-post-description{
+  max-width: 180px;
+}
 }
  
